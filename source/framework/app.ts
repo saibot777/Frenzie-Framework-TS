@@ -28,7 +28,7 @@ class App {
         this._dispatcher.initialize();
         this._mediator.subscribe(new AppEvent("app.error", null, (e:
         any, data? : any) => {
-            this._onErrorHandler(data);
+            this._OnErrorHandler(data);
         }));
         this._mediator.publish(new AppEvent("app.initialize", null,
         null));
